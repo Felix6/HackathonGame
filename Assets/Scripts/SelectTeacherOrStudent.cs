@@ -12,6 +12,6 @@ public class SelectTeacherOrStudent : MonoBehaviour {
 
     public void Student()
     {
-        //UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex + 1);
+        //UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex + 3);
     }
 }

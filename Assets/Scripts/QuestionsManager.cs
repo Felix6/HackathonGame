@@ -23,9 +23,9 @@ public class QuestionsManager : MonoBehaviour
     int amountOfQuestions;
     int index = 0;
 
-    string question;
-    string correctAnswer;
-    string wrongAnswer1, wrongAnswer2, wrongAnswer3;
+    public static string question;
+    public static string correctAnswer;
+    public static string wrongAnswer1, wrongAnswer2, wrongAnswer3;
 
     string[] questions;
     string[] correctAnswers;
@@ -38,7 +38,10 @@ public class QuestionsManager : MonoBehaviour
 
     void Update()
     {
-        
+        if(Input.GetKey(KeyCode.Escape))
+        {
+            UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex  - 1);
+        }
     }
 
     public void CreateQuiz()
@@ -60,9 +63,8 @@ public class QuestionsManager : MonoBehaviour
 
     public void AddQuestion()
     {
-        if(index < amountOfQuestions)
-        {
-            Debug.Log("Ahhhhhhhhhhhhh");
+        //if(index < amountOfQuestions)
+        //{
             
             question = quizQuestion.text;
             correctAnswer = quizCorrectAnswer.text;
@@ -71,24 +73,18 @@ public class QuestionsManager : MonoBehaviour
             wrongAnswer2 = quizWrongAnswer2.text;
             wrongAnswer3 = quizWrongAnswer3.text;
 
-            questions[index] = question;
-            correctAnswers[index] = correctAnswer;
-            index++;
+            //questions[index] = question;
+            //correctAnswers[index] = correctAnswer;
+            //index++;
 
-            quizQuestion.text = "";
-            quizCorrectAnswer.text = "";
-            quizWrongAnswer1.text = "";
-            quizWrongAnswer2.text = "";
-            quizWrongAnswer3.text = "";
+            //quizQuestion.text = "";
+            //quizCorrectAnswer.text = "";
+            //quizWrongAnswer1.text = "";
+            //quizWrongAnswer2.text = "";
+            ///quizWrongAnswer3.text = "";
 
-            Debug.Log("question: " + questions[index] + "\n correct answer: " + correctAnswer);
-        }
-
-        if (index == amountOfQuestions)
-        {
-            //add.interactable = false;
-            Debug.Log(index + "" + amountOfQuestions);
-        }
+            UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex + 1);
+        //}
 
     }
 
