@@ -6,8 +6,8 @@ Made in Unity for the Education Got Hacked! Hackathon in Engine-4. https://gotha
 Developed from November 30, 2018 - to December 2, 2018.
 
 No Name Team Members:
-- Felix M. Colón Candelaria
-- Alondra De Jesús
-- Bryan B. Bonilla Díaz
-- Petter Vazquez Rivera
-- Amanda Rijos Martinez
+- Felix M. Colón Candelaria (Code, Debug, UI) 
+- Alondra De Jesús (Code, UI)
+- Bryan B. Bonilla Díaz (Music, Art, UI)
+- Petter Vazquez Rivera (Code, UI)
+- Amanda Rijos Martinez (Art, Animation)
