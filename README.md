@@ -1,5 +1,5 @@
-# HackathonGame
-Educational game made in the Education Got Hacked! Hackathon in Engine-4.
+# SQUID-QUIZ
+An educational game made in the Education Got Hacked! Hackathon in Engine-4.
 
 Team Members:
 - Felix M. Colón Candelaria
