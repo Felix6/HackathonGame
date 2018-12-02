@@ -5,19 +5,19 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/1) Start Scene.unity
+    path: Assets/Scenes/1)Start_Scene.unity
     guid: c70355391bd4f6e45862e95554e9e8ea
   - enabled: 1
-    path: Assets/Scenes/2) Select_Screen.unity
-    guid: b9a58bca9a546f04987469f20f56dca1
+    path: Assets/Scenes/2)Select.unity
+    guid: 5b6329a36930520469bffede2dc602cf
   - enabled: 1
-    path: Assets/Scenes/Game Screen.unity
-    guid: c4d2cc75de7833c4494235625f257371
+    path: Assets/Scenes/Teacher_Scene.unity
+    guid: 0b21cd5f318243347a02195d009a0321
   - enabled: 1
-    path: Assets/Scenes/Load.unity
-    guid: f47c1095c9e2e6142a681dfb4f897619
+    path: Assets/Scenes/AddingQuestions.unity
+    guid: 7f2e7ccc75e9e154dbfef245186b16cc
+  - enabled: 1
+    path: Assets/Scenes/Load_Quiz.unity
+    guid: b97253b37dd845347bd424863bef613d
   m_configObjects: {}

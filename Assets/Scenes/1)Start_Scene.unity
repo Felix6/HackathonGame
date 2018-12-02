@@ -299,7 +299,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 468759949}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d308701ea5ca6c479deb0ca4b9bf360, type: 3}
+  m_Script: {fileID: 11500000, guid: d37ca398cbd997a4b8aec7082353851e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &468759952
@@ -474,7 +474,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 50
-    m_Alignment: 7
+    m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 0
     m_HorizontalOverflow: 0
@@ -774,7 +774,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 468759951}
-        m_MethodName: NextScene
+        m_MethodName: StartScreen
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

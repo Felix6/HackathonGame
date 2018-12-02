@@ -12,17 +12,28 @@ public class QuestionsManager : MonoBehaviour
     public InputField quizName;
     public InputField quizLenght;
 
-    string name;
-    int amountOfQuestions; 
+    public InputField quizQuestion;
+    public InputField quizCorrectAnswer;
+    public InputField quizWrongAnswer1, quizWrongAnswer2, quizWrongAnswer3;
 
-    List<Question> Question = new List<Question>();
-    List<Question> Answer = new List<Question>();
+    public Button add;
+    public Button finish;
 
-    bool isTrue;
+    string _name;
+    int amountOfQuestions;
+    int index = 0;
+
+    string question;
+    string correctAnswer;
+    string wrongAnswer1, wrongAnswer2, wrongAnswer3;
+
+    string[] questions;
+    string[] correctAnswers;
 
     void Start()
     {
-        isTrue = false;
+        add.interactable = true;
+        finish.interactable = false;
     }
 
     void Update()
@@ -32,16 +43,53 @@ public class QuestionsManager : MonoBehaviour
 
     public void CreateQuiz()
     {
-        
+        _name = quizName.text;
         amountOfQuestions = int.Parse(quizLenght.text);
-        string[] questions = new string[amountOfQuestions];
+
+        Debug.Log("name = " + _name + " amount = " + amountOfQuestions);
+
+        questions = new string[amountOfQuestions];
+
+        UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     public void RemoveItem()
     {
-        // myTextBoxList.Add(TextBox1);
-        // myTextBoxList.Add(TextBox2);
-        // mytextBoxList.Add(TextBox3);
+       // ahhhh
+    }
+
+    public void AddQuestion()
+    {
+        if(index < amountOfQuestions)
+        {
+            Debug.Log("Ahhhhhhhhhhhhh");
+            
+            question = quizQuestion.text;
+            correctAnswer = quizCorrectAnswer.text;
+
+            wrongAnswer1 = quizWrongAnswer1.text;
+            wrongAnswer2 = quizWrongAnswer2.text;
+            wrongAnswer3 = quizWrongAnswer3.text;
+
+            questions[index] = question;
+            correctAnswers[index] = correctAnswer;
+            index++;
+
+            quizQuestion.text = "";
+            quizCorrectAnswer.text = "";
+            quizWrongAnswer1.text = "";
+            quizWrongAnswer2.text = "";
+            quizWrongAnswer3.text = "";
+
+            Debug.Log("question: " + questions[index] + "\n correct answer: " + correctAnswer);
+        }
+
+        if (index == amountOfQuestions)
+        {
+            //add.interactable = false;
+            Debug.Log(index + "" + amountOfQuestions);
+        }
+
     }
 
 
