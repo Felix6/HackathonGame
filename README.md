@@ -1,7 +1,7 @@
 # SQUID-QUIZ
 An educational game made in the Education Got Hacked! Hackathon in Engine-4. https://gothacked.org/
 
-Team Members:
+No Name Team Members:
 - Felix M. Colón Candelaria
 - Alondra De Jesus
 - Bryan B. Bonilla Díaz
