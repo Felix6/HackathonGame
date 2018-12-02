@@ -7,7 +7,7 @@ Developed from November 30, 2018 - to December 2, 2018.
 
 No Name Team Members:
 - Felix M. Colón Candelaria
-- Alondra De Jesus
+- Alondra De Jesús
 - Bryan B. Bonilla Díaz
-- Petter Vazquez
+- Petter Vazquez Rivera
 - Amanda Rijos Martinez
